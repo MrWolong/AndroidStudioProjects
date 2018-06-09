@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="文件"
+        android:icon="@drawable/file" />
+    <item android:title="编辑"
+        android:icon="@drawable/edit" />
+    <item android:title="字体大小"
+        android:id="@+id/dx"
+        android:icon="@drawable/textsize">
+        <menu >
+            <group>
+                <item android:title="超大号"
+                    android:id="@+id/font18" />
+                <item android:title="大号"
+                    android:id="@+id/font16" />
+                <item android:title="中号"
+                    android:id="@+id/font12" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="字体颜色"
+        android:id="@+id/ys"
+        android:icon="@drawable/textcolor" >
+        <menu >
+            <group>
+                <item android:id="@+id/red"
+                    android:title="红色" />
+                <item android:title="绿色"
+                    android:id="@+id/green" />
+                <item android:title="蓝色"
+                    android:id="@+id/blue" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="退出"
+        android:id="@+id/exit"
+        android:icon="@drawable/exit" />
+    <item android:title="关于" />
+    <item android:title="帮助" />
+</menu>

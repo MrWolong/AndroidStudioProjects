@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/card"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_notecell_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:text="title"
+            android:textSize="30dp" />
+
+        <View android:id="@+id/separator"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/tv_notecell_title"
+            android:layout_centerVertical ="true"
+            android:background="#ffffff"/>\
+        <LinearLayout
+            android:layout_below="@+id/tv_notecell_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_notecell_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_notecell_title"
+                android:paddingLeft="10dp"
+                android:text="日期"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/tv_notecell_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/rabt_album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableTop="@drawable/photo"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="相册"
+                    android:textColor="#272727"
+                    />
+                <RadioButton
+                    android:id="@+id/rabt_roate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableTop="@drawable/ic_action_location"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:text="线路"
+                    android:textColor="#272727"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
